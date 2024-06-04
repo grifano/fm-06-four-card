@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Social links profile</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="visually-hidden">
+        Product Card Component RWD coding challenge
+      </h1>
+      <div class="container">
+        <h2 class="visually-hidden">Product Card Component</h2>
+        <div class="product-card_component">
+          <picture class="product-card_picture">
+            <!-- Mobile -->
+            <source
+              type="image/webp"
+              srcset="
+                ./images/perfume-small.webp,
+                ./images/perfume-small@2x.webp 2x
+              "
+              media="(min-width: 320px) and (max-width: 768px)"
+              width="343"
+              height="240"
+            />
+            <source
+              type="image/jpg"
+              srcset="
+                ./images/perfume-small.jpg,
+                ./images/perfume-small@2x.jpg 2x
+              "
+              media="(min-width: 320px) and (max-width: 768px)"
+              width="343"
+              height="240"
+            />
+            <!-- Desktop -->
+            <source
+              type="image/webp"
+              srcset="
+                ./images/perfume-big.webp,
+                ./images/perfume-big@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              width="300"
+              height="450"
+            />
+            <source
+              type="image/jpg"
+              srcset="./images/perfume-big.jpg, ./images/perfume-big@2x.jpg 2x"
+              media="(min-width: 768px)"
+              width="300"
+              height="450"
+            />
+            <!-- Default image for older browsers; this will be used if none of the above sources are compatible -->
+            <img
+              src="./images/perfume-small.jpg"
+              alt="Perfume bottle"
+              width="343"
+              height="240"
+              class="product-card_image"
+            />
+          </picture>
+          <div class="product-card_content">
+            <p class="product-card_caption">Perfume</p>
+            <h3 class="product-card_title">Gabrielle Essence Eau De Parfum</h3>
+            <p class="product-card_text">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+            <div class="product-card_price-wrap">
+              <span class="product-card_price">$149.99</span>
+              <span class="product-card_old-price">$169.99</span>
+            </div>
+            <button class="product-card_button" type="button">
+              <span class="product-card_button-text">Add to Cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      <div class="attribution_wrap">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.grifano.com">Serhii Orlenko</a>.
+      </div>
+    </footer>
+  </body>
+</html>

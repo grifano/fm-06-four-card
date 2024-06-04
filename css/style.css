@@ -1,0 +1,273 @@
+/*** Fonts ***/
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/fraunces-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*** Variables ***/
+:root {
+  /*** Colors ***/
+  --pure-white: #fff;
+  --cream-bg: #f2eae2;
+  --aurometal-saurus: #6c7289;
+  --deep-aquamarine: #3d8168;
+  --deep-aquamarine-hover: #1a4032;
+  --gunmetal: #1c232b;
+  /*** Fonts ***/
+  --font-family: 'Montserrat', sans-serif;
+  --second-family: 'Fraunces', sans-serif;
+}
+
+/*** Reset styles ***/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+input,
+textarea {
+  outline: none;
+}
+
+/*** Base Styles ***/
+body {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--aurometal-saurus);
+  background-color: var(--cream-bg);
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+}
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.container {
+  flex-grow: 1;
+  max-width: 375px;
+  padding: 0 16px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 0;
+  }
+}
+/*** Visually hide element, but keep visible for search engine ***/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*** Product Card Component Styles ***/
+.product-card_component {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--pure-white);
+  .product-card_picture {
+  }
+  .product-card_image {
+    object-fit: cover;
+  }
+  .product-card_content {
+    padding: 24px;
+  }
+  .product-card_caption {
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.42em;
+    color: var(--aurometal-saurus);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .product-card_title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--gunmetal);
+    margin-bottom: 16px;
+  }
+  .product-card_text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 164%;
+    color: var(--aurometal-saurus);
+    margin-bottom: 24px;
+  }
+  .product-card_price-wrap {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 20px;
+  }
+  .product-card_price {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--deep-aquamarine);
+  }
+  .product-card_old-price {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 177%;
+    text-decoration: line-through;
+    color: var(--aurometal-saurus);
+  }
+  .product-card_button {
+    padding: 16px;
+    width: 100%;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--pure-white);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: var(--deep-aquamarine);
+  }
+  .product-card_button-text {
+    display: inline-block;
+    padding-left: 27px;
+    background: url('../images/icon-cart.svg') top 50% left no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .product-card_component {
+    display: flex;
+    .product-card_picture {
+      width: 50%;
+    }
+    .product-card_image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .product-card_content {
+      width: 50%;
+      padding: 32px;
+    }
+    .product-card_caption {
+      margin-bottom: 20px;
+    }
+    .product-card_title {
+      margin-bottom: 24px;
+    }
+    .product-card_text {
+      margin-bottom: 30px;
+    }
+    .product-card_price-wrap {
+      margin-bottom: 30px;
+    }
+    .product-card_button {
+      transition: background 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .product-card_button:hover,
+    .product-card_button:focus {
+      background-color: var(--deep-aquamarine-hover);
+    }
+  }
+}
+
+/*** Attribution footer ***/
+.attribution {
+  color: var(--dark-navy);
+  background-color: var(--dark-grey);
+  padding: 16px;
+  text-align: center;
+}
+.attribution_wrap {
+  margin: 0 auto;
+  max-width: 24ch;
+}
+.attribution a {
+  text-decoration: underline;
+  opacity: 0.7;
+  transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.attribution a:hover,
+.attribution a:focus {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .attribution {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  .attribution_wrap {
+    max-width: 100%;
+  }
+}
