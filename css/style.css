@@ -1,41 +1,36 @@
 /*** Fonts ***/
-/* montserrat-500 - latin */
+/* poppins-200 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-weight: 200;
+  src: url('../fonts/poppins-v21-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* montserrat-700 - latin */
+/* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* fraunces-700 - latin */
+/* poppins-600 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Fraunces';
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/fraunces-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-weight: 600;
+  src: url('../fonts/poppins-v21-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /*** Variables ***/
 :root {
   /*** Colors ***/
-  --pure-white: #fff;
-  --cream-bg: #f2eae2;
-  --aurometal-saurus: #6c7289;
-  --deep-aquamarine: #3d8168;
-  --deep-aquamarine-hover: #1a4032;
-  --gunmetal: #1c232b;
+  --bg-body-color: #fafafa;
+  --text-body-color: #4d4f62;
   /*** Fonts ***/
-  --font-family: 'Montserrat', sans-serif;
-  --second-family: 'Fraunces', sans-serif;
+  --font-family: 'Poppins', sans-serif;
 }
 
 /*** Reset styles ***/
@@ -88,8 +83,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.6;
-  color: var(--aurometal-saurus);
-  background-color: var(--cream-bg);
+  color: var(--text-body-color);
+  background-color: var(--bg-body-color);
 }
 main {
   display: flex;
