@@ -13,7 +13,7 @@ from tech to the best cycling routes.
 
 Happy exploring!
 
-# Project: Product Card Component RWD coding challenge
+# Project: Four card feature section
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges that help to improve
 coding skills by building realistic projects.
@@ -44,7 +44,6 @@ Your users should be able to:
 ## Author
 
 - Website - [Serhii "Grifano" Orlenko](https://www.grifano.com)
-- Uxcel - [Design](https://app.uxcel.com/ux/EE4PBID94EEH)
 - Frontend Mentor -
   [Web Development](https://www.frontendmentor.io/profile/grifano)
 - LinkedIn - [Serhii Orlenko](https://www.linkedin.com/in/grifano/)
