@@ -38,8 +38,8 @@ Your users should be able to:
 ### Links
 
 - Solution URL:
-  [FrontendMentor Challenge Hub](https://www.frontendmentor.io/solutions/responsive-product-card-component-css-ILCwksw-aE)
-- Live Site URL: [GitHub Pages](https://grifano.github.io/fm-05-product-card/)
+  [FrontendMentor Challenge Hub](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK)
+- Live Site URL: [GitHub Pages](https://grifano.github.io/fm-06-four-card/)
 
 ## Author
 
